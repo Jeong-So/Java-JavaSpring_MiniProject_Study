@@ -1,0 +1,63 @@
+package miniProject1;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1  {
+	
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		int amount = 0;
+		
+		while(true) {
+			System.out.println("1 : 지출 금액 입력");
+			System.out.println("2 : 지출 금액 확인");
+			System.out.println("3 : 프로그램 종료");
+			System.out.print("메뉴를 선택해주세요 : ");
+			int number = scanner.nextInt();
+
+			
+			switch(number) {
+				case 1:
+					// 여기에 1 : 지출 금액 입력 기능을 구현해주세요.
+					// 프로그램 사용자에게 아래의 정보를 입력 받게 해주세요. 금액(amount) : 정수형 숫자만 입력 가능
+					// 자세한 설명은 함께 제공된 PDF 를 참고해주세요.
+					System.out.print("지출 금액을 입력해주세요 : ");
+					try {
+						amount = scanner.nextInt();
+						break;
+					}
+					catch(InputMismatchException ime) { 
+						scanner = new Scanner(System.in);
+						System.out.print("정수만 입력하세요.");
+						break;
+					}
+					finally {
+						System.out.print("\n 메뉴로 돌아갑니다. \n");
+					}
+					
+				case 2:
+					// 여기에 2 : 지출 금액 확인을 구현해주세요.
+					// 위 '지출 금액 입력' 을 통해 입력된 금액을 화면 텍스트로 출력 되게 해주세요.
+					// 자세한 설명은 함께 제공된 PDF 를 참고해주세요.
+					
+					if (amount != 0 ) {
+						System.out.println(amount);
+					}
+					else {
+						System.out.println("입력되지 않았거나 지출이 0원 입니다.");
+					}
+					break;
+					
+				case 3:
+					return;
+			}
+			
+		}
+
+	}
+
+}
