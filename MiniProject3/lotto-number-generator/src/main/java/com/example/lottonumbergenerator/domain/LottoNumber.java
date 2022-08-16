@@ -27,3 +27,10 @@ public class LottoNumber {
     }
 
 }
+/*
+{
+    "lottoNumber" : [
+    3, 16, 35, 14, 64],
+    "creatorName" : "steve"
+}
+ */

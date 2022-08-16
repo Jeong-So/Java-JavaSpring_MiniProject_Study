@@ -15,17 +15,18 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class LottoNumberService {
 
-    private static List<LottoNumber> lottoNumberList;
+    private static List<LottoNumber> lottoNumberList = new ArrayList<>();
 
     // 로또 번호 생성
-    public void createLottoNumber(String creatorName) {
+    public String createLottoNumber(String creatorName) {
 
         List<Integer> numbers = this.createLottoNumber();
-
+        System.out.println(numbers);
         LottoNumber lottoNumber = new LottoNumber(numbers, creatorName, LocalDate.now());
-
+        System.out.println("lottoNumber: "+ lottoNumber);
         lottoNumberList.add(lottoNumber);
 
+        return creatorName;
     }
 
     // 로또 번호 읽어오기
