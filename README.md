@@ -1,2 +1,2 @@
-# FastCampus_JAVA_Project
-FastCampus_JAVA_MiniProject
+# JAVA Spring Study_MiniProject
+JAVA_MiniProject
