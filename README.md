@@ -1,2 +1,2 @@
-# JAVA Spring Study_MiniProject
+# Java-JavaSpring_MiniProject_Study
 Java-JavaSpring_MiniProject
