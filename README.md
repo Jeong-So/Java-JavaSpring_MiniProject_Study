@@ -1,2 +1,2 @@
 # Java-JavaSpring_MiniProject_Study
-Java-JavaSpring_MiniProject
+[Java-JavaSpring] MiniProject
